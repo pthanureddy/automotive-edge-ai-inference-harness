@@ -1,0 +1,30 @@
+{
+  "artifacts": [
+    {
+      "bytes": 316,
+      "path": "artifacts/host_benchmark.json",
+      "sha256": "4333aac0cfaef67859b3c223ad73a2c5bf38550694a2e24f417718be5f692248"
+    },
+    {
+      "bytes": 2055,
+      "path": "artifacts/metrics.json",
+      "sha256": "05cb1031f88e1e2aca21979e0e452a2bd5b8a26848ac097b90ad64620c3f799b"
+    },
+    {
+      "bytes": 2412,
+      "path": "artifacts/model.onnx",
+      "sha256": "491d11fa2599b89aa0d2d6c840e3f3642f39d73cc25392c8c14d8ce501ae8f91"
+    },
+    {
+      "bytes": 43538,
+      "path": "artifacts/reference_vectors.csv",
+      "sha256": "351fdf96be17301c93f6dba6f9f34194b4fe4472cf039b6234c0730869f80edb"
+    },
+    {
+      "bytes": 2640,
+      "path": "firmware/generated/model_data.h",
+      "sha256": "032b569ece5f18df3c3eea5129010b4680a2c14fcefcc05a284862005191b1de"
+    }
+  ],
+  "schema_version": 1
+}

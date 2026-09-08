@@ -1,0 +1,98 @@
+{
+  "dataset": {
+    "split": {
+      "cycle_overlap_count": 0,
+      "cycles": {
+        "test": 12,
+        "train": 51,
+        "validation": 9
+      },
+      "windows": {
+        "test": 72,
+        "train": 306,
+        "validation": 54
+      }
+    },
+    "total_cycles": 72,
+    "total_windows": 432
+  },
+  "float_model": {
+    "cross_validation_macro_f1": [
+      0.92059,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "cross_validation_macro_f1_mean": 0.984118,
+    "robust_noise": {
+      "accuracy": 0.951389,
+      "macro_f1": 0.951129
+    },
+    "test": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "test_confusion_matrix": [
+      [
+        24,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        24
+      ]
+    ],
+    "validation": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    }
+  },
+  "onnx": {
+    "model_bytes": 2412,
+    "opset": 17,
+    "test_prediction_mismatches_vs_sklearn": 0
+  },
+  "quantized_reference": {
+    "fp32_parameter_bytes": 1212,
+    "int8_weight_bytes": 252,
+    "kernel": "int8 weights/activations, int32 accumulation, float bias and rescaling",
+    "parameter_byte_reduction_percent": 61.06,
+    "quantized_parameter_bytes": 472,
+    "robust_noise": {
+      "accuracy": 0.951389,
+      "macro_f1": 0.951129
+    },
+    "test": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "test_prediction_mismatches_vs_sklearn": 0,
+    "validation": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    }
+  },
+  "scope": {
+    "classes": [
+      "normal",
+      "imbalance",
+      "bearing_fault"
+    ],
+    "data": "deterministic synthetic three-axis vibration windows",
+    "execution": "host-based reference validation; no target MCU or vehicle",
+    "sample_rate_hz": 400,
+    "window_samples": 64
+  },
+  "unsupervised_baseline": {
+    "method": "IsolationForest fitted on normal training cycles",
+    "test_roc_auc": 1.0
+  }
+}

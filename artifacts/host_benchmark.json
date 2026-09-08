@@ -1,0 +1,12 @@
+{
+  "scope": "host timing only; not MCU, RTOS, or hard-real-time evidence",
+  "iterations": 20000,
+  "host_budget_us": 1000.000000,
+  "deadline_misses": 1,
+  "mean_us": 90.680540,
+  "p50_us": 88.900000,
+  "p95_us": 93.900000,
+  "p99_us": 156.200000,
+  "max_us": 4360.400000,
+  "prediction_checksum": 0
+}
